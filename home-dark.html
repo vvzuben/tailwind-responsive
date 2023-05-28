@@ -1,0 +1,877 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body class="border-2 border-gray-800 w-full">
+  <div class="lg:h-20 md:h-14 h-12 flex border-b-2 border-gray-800 box-content bg-gray-700">
+    <div class="xl:w-2/3 lg:w-1/2 md:w-2/3 sm:w-3/5 w-full flex h-full">
+      <div class="xl:w-1/3 lg:w-1/2 md:w-2/3 w-full flex items-center">
+        <div class="block lg:hidden border-r-2 h-full flex items-center border-gray-800 px-4 cursor-pointer"
+          id="hamburger">
+          <img src="./images/icons/menu.svg" class="filter-invert" alt="" />
+        </div>
+        <div class="md:text-2xl text-base text-white h-full font-prequel w-full flex items-center justify-center">
+          The Blanket Tape
+        </div>
+      </div>
+      <div
+        class="xl:w-2/3 lg:w-1/2 md:w-1/3 border-l-2 border-gray-800 md:flex hidden xl:justify-end justify-center items-center pr-0 xl:pr-4">
+        <div class="flex">
+          <a href="#" class="mx-4">
+            <img src="./images/icons/notification.svg" alt="">
+          </a>
+          <div class="relative mx-4">
+            <a href="#" id="setting">
+              <img src="./images/icons/settings.svg" id="setting-image" alt="">
+            </a>
+            <div
+              class="absolute modal-box-shadow z-10 bg-gray-600 text-white w-40 -left-5 lg:top-16 md:top-12 rounded hidden"
+              id="board">
+              <div class="triangle dark"></div>
+              <ul class="py-1">
+                <li class="px-2 py-1">
+                  <a class="w-full h-full flex items-center" href="./home.html">
+                    <div class="w-4 h-4 mr-2 rounded-full border border-gray-800 bg-white"></div>
+                    Light theme
+                  </a>
+                </li>
+                <li class="px-2 py-1">
+                  <a class="w-full h-full flex items-center" href="./home-dark.html">
+                    <div class="w-4 h-4 mr-2 rounded-full bg-indigo-600"></div>
+                    Dark theme
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="mx-4">
+            <img src="./images/icons/messages.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="xl:w-1/3 lg:w-1/2 md:w-1/3 sm:w-2/5 flex create-new-post-container">
+      <div
+        class="md:flex hidden lg:w-1/2 border-l-2 lg:order-2 xl:order-1 border-gray-800 justify-center items-center px-2 flex-shrink-0">
+        <div class="relative lg:mr-4">
+          <div class="absolute w-2 h-2 bg-green-500 -right-1 -top-1"></div>
+          <img src="./images/avatar/1.png" class="w-10 h-10" alt="">
+        </div>
+        <div class="flex flex-col lg:flex md:hidden">
+          <span class="text-base font-bold text-white">Hannah Benneth</span>
+          <span class="text-xs text-gray-400">Fashion Expert</span>
+        </div>
+      </div>
+      <div
+        class="lg:w-1/2 w-full border-l-2 lg:order-1 xl:order-2 border-gray-800 flex justify-center items-center px-2">
+        <button
+          class="bg-indigo-600 border-0 text-white lg:w-52 md:w-full sm:w-40 box-content h-9 border border-gray-800 btn-box-shadow font-bold md:text-sm text-xs flex items-center justify-center px-3">
+          <i class="fa fa-plus"></i>
+          <span class="hidden ml-1 create-new-post">Create New Post</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="flex lg:py-9 md:py-8 md:px-10 sm:px-5 sm:py-5 py-2 px-2.5 bg-gray-800 border-b-2 border-gray-800 relative">
+    <div
+      class="w-80 top-0 -left-80 p-10 lg:hidden block bg-gray-800 h-full absolute xl:text-base lg:text-sm duration-200"
+      id="mobile-menu">
+      <a href="#" class="flex items-center mb-10 font-bold text-indigo-700">
+        <img src="./images/icons/home.svg" alt="" class="mr-2">
+        Home
+      </a>
+      <a href="#" class="flex items-center mb-2.5 font-bold text-white">
+        <img src="./images/icons/designer.svg" alt="" class="mr-2">
+        Designers
+      </a>
+      <a href="#" class="flex items-center mb-2.5 font-bold text-white">
+        <img src="./images/icons/store.svg" alt="" class="mr-2">
+        Stories
+      </a>
+      <a href="#" class="flex items-center mb-2.5 font-bold text-white">
+        <img src="./images/icons/publication.svg" alt="" class="mr-2">
+        Publications
+      </a>
+      <a href="#" class="flex items-center mb-2.5 font-bold text-white">
+        <img src="./images/icons/people.svg" alt="" class="mr-2">
+        People
+      </a>
+    </div>
+    <div class="xl:w-4/5 w-full flex">
+      <div class="lg:w-1/5 lg:block hidden xl:text-base lg:text-sm md:pt-6 pt-5">
+        <a href="#" class="flex items-center mb-10 font-bold text-indigo-700">
+          <img src="./images/icons/home.svg" alt="" class="mr-2">
+          Home
+        </a>
+        <a href="#" class="flex items-center mb-2.5 font-bold text-white">
+          <img src="./images/icons/designer.svg" alt="" class="mr-2">
+          Designers
+        </a>
+        <a href="#" class="flex items-center mb-2.5 font-bold text-white">
+          <img src="./images/icons/store.svg" alt="" class="mr-2">
+          Stories
+        </a>
+        <a href="#" class="flex items-center mb-2.5 font-bold text-white">
+          <img src="./images/icons/publication.svg" alt="" class="mr-2">
+          Publications
+        </a>
+        <a href="#" class="flex items-center mb-2.5 font-bold text-white">
+          <img src="./images/icons/people.svg" alt="" class="mr-2">
+          People
+        </a>
+      </div>
+      <div class="lg:w-4/5 w-full xl:px-5">
+        <div class="bg-gray-700 md:py-6 md:px-7 p-5 mb-5">
+          <p class="font-bold text-white md:text-base sm:text-sm text-xs mb-0.5">
+            Hannah Benneth <span class="font-normal text-gray-500">started a thread on</span> Billy Reid
+          </p>
+          <p class="text-gray-500 text-xs mb-4">January 26, a few seconds ago</p>
+          <p class="font-bold md:text-xl text-lg text-white mb-4">
+            It looks like we’re going to be wearing cloth face masks for a while, which is all the more reason to find
+            one that you like.
+          </p>
+          <p class="lg:text-base md:text-sm text-xs text-white mb-4">
+            The CDC has been recommending that people wear masks when going out in public for weeks. And yesterday
+            Governor Andrew Cuomo issued an order that New Yorkers must wear masks in public places where social
+            distancing six feet is not possible.
+          </p>
+          <div class="flex md:mb-6 mb-4 md:pb-0.5 sm:pb-0 justify-between md:flex-row flex-col">
+            <div class="text-white font-bold text-xs flex flex-wrap md:mb-0 mb-4">
+              <span class="bg-indigo-700 mx-0.5 rounded px-2 py-1 mb-1 flex">Questions</span>
+              <span class="bg-red-400 mx-0.5 rounded px-2 py-1 mb-1 flex">Fashion</span>
+              <span class="bg-green-400 mx-0.5 rounded px-2 py-1 mb-1 flex">News</span>
+              <span class="bg-yellow-600 mx-0.5 rounded px-2 py-1 mb-1 flex">Clothing</span>
+            </div>
+            <div class="flex mb-1 text-white">
+              <span class="flex text-xs mr-5 pr-0.5">
+                <img src="./images/icons/heart.svg" class="mr-2" alt="">
+                <span class="font-bold mr-1">28</span> Likes
+              </span>
+              <span class="flex text-xs mr-5 pr-0.5">
+                <img src="./images/icons/chat.svg" class="mr-2" alt="">
+                <span class="font-bold mr-1">26</span> Comments
+              </span>
+            </div>
+          </div>
+          <div class="flex md:text-sm text-xs text-white font-bold md:mb-8 mb-6">
+            <button class="border border-gray-800 bg-indigo-600 btn-box-shadow font-sm h-9 box-content px-6 mr-5">
+              Add a Comment
+            </button>
+            <button class="border border-gray-800 bg-indigo-600 btn-box-shadow font-sm h-9 box-content px-6">
+              Share
+            </button>
+          </div>
+          <div class="border border-gray-700 bg-gray-600 md:p-6 px-4 py-5">
+            <p class="font-bold md:text-base sm:text-sm text-xs text-white mb-0">Jonathan Reinink</p>
+            <p class="text-xs text-gray-500 mb-3">a few seconds ago</p>
+            <p class="text-sm text-white mb-3">
+              So naive and out of touch I didn't realise this business was booming hah...I still wear the standard
+              blue/medical ones but as the weather is getting hot, I hate it more and more.
+            </p>
+            <div class="flex mb-1 text-white">
+              <span class="flex text-xs mr-5 pr-0.5">
+                <img src="./images/icons/heart.svg" class="mr-2" alt="">
+                <span class="font-bold mr-1">8</span> Likes
+              </span>
+              <span class="flex text-xs mr-5 pr-0.5">
+                <img src="./images/icons/chat.svg" class="mr-2" alt="">
+                <span class="font-bold mr-1">2</span> Comments
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:flex hidden xl:hidden mb-5 flex-col md:flex-row">
+          <div class="bg-dark md:mr-2.5 md:mb-0 mb-5">
+            <div class="py-5 px-7 text-indigo-700 font-bold sm:text-xl text-lg border-b border-indigo-700">
+              Help Requests
+            </div>
+            <div class="p-7 pb-0">
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  The Best Street Style at the Spring 2021 Couture Shows in Paris
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Anna Chapman </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">What Are Your Favorite Clothes?</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  New Fashion Arrivals To Get Excited About Now
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Nikki Person </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">Versace or Gucci</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  Meet the Couple Taking Glamour Shots of Korea’s Modern Families
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Jason Swarrow </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">What's the weirdest trend?</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  Which one way to shipping do you prefer? Shopping online or purchasing in a local store?
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Jason Swarrow </span>
+                  <span class="text-gray-500">20 minutes ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">How To Take Care Of Clothes</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  High-waisted trousers with unique suspenders
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Nikki Person </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">Versace or Gucci</p>
+              </div>
+
+              <div class="text-indigo-700 text-center border-t-2 border-indigo-700 text-sm font-bold py-3.5">
+                <i class="fa fa-ellipsis-h"></i>
+                Show More
+                <i class="fa fa-ellipsis-h"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bg-dark md:ml-2.5">
+            <div class="py-5 px-7 text-indigo-700 font-bold sm:text-xl text-lg border-b border-indigo-700">
+              Community
+            </div>
+            <div class="p-7 pb-0">
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  Hope people will find cute ones and share them!!
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Anna Chapman </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">Cloth Face Masks</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  I'll posit this thread in here, but it can be moved if the mods feel it should be elsewhere....
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Eric Gomes </span>
+                  <span class="text-gray-500">2 minutes ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">Scott Trindle - Photographer</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  What other celebs do we know have "contracts" with big brands?
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Eric Gomes </span>
+                  <span class="text-gray-500">28 minutes ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">The Business of Celebrities</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  I think that Beyonce just buy a lot of Gucci...
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Anna Chapman </span>
+                  <span class="text-gray-500">one day ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">Celebrities as Fashion</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  What other celebs do we know have "contracts" with big brands?
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Maria Sarrow </span>
+                  <span class="text-gray-500">one day ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">Celebrities as Fashion</p>
+              </div>
+
+              <div class="text-indigo-700 text-center border-t-2 border-indigo-700 text-sm font-bold py-3.5">
+                <i class="fa fa-ellipsis-h"></i>
+                Show More
+                <i class="fa fa-ellipsis-h"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:hidden flex mb-5 flex-col md:flex-row">
+          <div class="bg-dark md:mr-2.5 md:mb-0 mb-5 collapse">
+            <div
+              class="py-5 px-7 text-indigo-700 font-bold sm:text-xl text-lg sm:active collapse-header flex justify-between"
+              data-target="#requests">
+              <span>Help Requests</span>
+              <div class="icon flex items-center">
+                <img src="./images/icons/arrow-right.svg" class="left" />
+                <img src="./images/icons/arrow-down.svg" class="down" />
+              </div>
+            </div>
+            <div class="p-7 pb-0 collapse-body border-t border-indigo-700" id="Requests">
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  The Best Street Style at the Spring 2021 Couture Shows in Paris
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Anna Chapman </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">What Are Your Favorite Clothes?</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  New Fashion Arrivals To Get Excited About Now
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Nikki Person </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">Versace or Gucci</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  Meet the Couple Taking Glamour Shots of Korea’s Modern Families
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Jason Swarrow </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">What's the weirdest trend?</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  Which one way to shipping do you prefer? Shopping online or purchasing in a local store?
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Jason Swarrow </span>
+                  <span class="text-gray-500">20 minutes ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">How To Take Care Of Clothes</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  High-waisted trousers with unique suspenders
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Nikki Person </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">Versace or Gucci</p>
+              </div>
+
+              <div class="text-indigo-700 text-center border-t-2 border-indigo-700 text-sm font-bold py-3.5">
+                <i class="fa fa-ellipsis-h"></i>
+                Show More
+                <i class="fa fa-ellipsis-h"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bg-dark md:ml-2.5 collapse">
+            <div class="py-5 px-7 text-indigo-700 font-bold sm:text-xl text-lg collapse-header flex justify-between"
+              data-target="#community">
+              <span>Community</span>
+              <div class="icon flex items-center">
+                <img src="./images/icons/arrow-right.svg" class="left" />
+                <img src="./images/icons/arrow-down.svg" class="down" />
+              </div>
+            </div>
+            <div class="p-7 pb-0 collapse-body border-t border-indigo-700" id="community">
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  Hope people will find cute ones and share them!!
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Anna Chapman </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">Cloth Face Masks</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  I'll posit this thread in here, but it can be moved if the mods feel it should be elsewhere....
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Eric Gomes </span>
+                  <span class="text-gray-500">2 minutes ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">Scott Trindle - Photographer</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  What other celebs do we know have "contracts" with big brands?
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Eric Gomes </span>
+                  <span class="text-gray-500">28 minutes ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">The Business of Celebrities</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  I think that Beyonce just buy a lot of Gucci...
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Anna Chapman </span>
+                  <span class="text-gray-500">one day ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">Celebrities as Fashion</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-white mb-1">
+                  What other celebs do we know have "contracts" with big brands?
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Maria Sarrow </span>
+                  <span class="text-gray-500">one day ago in</span>
+                </p>
+                <p class="text-xs font-bold text-white">Celebrities as Fashion</p>
+              </div>
+
+              <div class="text-indigo-700 text-center border-t-2 border-indigo-700 text-sm font-bold py-3.5">
+                <i class="fa fa-ellipsis-h"></i>
+                Show More
+                <i class="fa fa-ellipsis-h"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-700 py-6 px-7 mb-5">
+          <p class="font-bold text-white md:text-base sm:text-sm text-xs mb-0.5">
+            Jannet Stevens <span class="text-gray-500 font-normal">added images to album:</span> Madras Shore Coat
+          </p>
+          <p class="text-gray-500 text-xs mb-4">January 25, 06:00 PM</p>
+
+          <div class="flex flex-wrap mb-4">
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2">
+              <img class="w-full" src="./images/products/1.png" alt="">
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2">
+              <img class="w-full" src="./images/products/2.png" alt="">
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2">
+              <img class="w-full" src="./images/products/3.png" alt="">
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2 md:block hidden">
+              <img class="w-full" src="./images/products/4.png" alt="">
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2 md:block hidden">
+              <img class="w-full" src="./images/products/5.png" alt="">
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2 lg:block hidden">
+              <img class="w-full" src="./images/products/6.png" alt="">
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2 lg:block hidden">
+              <img class="w-full" src="./images/products/7.png" alt="">
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2">
+              <div class="border border-dashed p-3 w-full h-full border-gray-500">
+                <div class="w-full h-full bg-gray-100 flex justify-center items-center flex-col font-sm text-white">
+                  See All
+                  <span class="text-2xl font-bold text-indigo-500">28</span>
+                  Images
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex md:text-sm text-xs text-white font-bold md:mb-8 mb-6">
+            <button class="border border-gray-800 bg-indigo-600 btn-box-shadow font-sm h-9 box-content px-6 mr-5">
+              Add a Comment
+            </button>
+            <button class="border border-gray-800 bg-indigo-600 btn-box-shadow font-sm h-9 box-content px-6">
+              Share
+            </button>
+          </div>
+          <div class="border border-gray-700 bg-gray-600 md:p-6 px-4 py-5">
+            <p class="font-bold md:text-base sm:text-sm text-xs text-white mb-0">Vanessa Bansh</p>
+            <p class="text-xs text-gray-500 mb-3">20 minutes ago</p>
+            <p class="text-sm text-white mb-3">
+              These are from topshop but they give the look of a designers shorts which I have forgotten, can someone
+              try and help? TIA!
+            </p>
+            <div class="flex mb-1 text-white">
+              <span class="flex text-xs mr-5 pr-0.5">
+                <img src="./images/icons/heart.svg" class="mr-2" alt="">
+                <span class="font-bold mr-1">8</span> Likes
+              </span>
+              <span class="flex text-xs mr-5 pr-0.5">
+                <img src="./images/icons/chat.svg" class="mr-2" alt="">
+                <span class="font-bold mr-1">2</span> Comments
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-700 py-6 px-7 mb-5">
+          <p class="font-bold md:text-base sm:text-sm text-xs text-white">
+            John Smith <span class="font-normal text-gray-500 mb-0.5">posted an article:</span>
+          </p>
+          <p class="text-xs text-gray-500 mb-5 pb-0.5">January 26, 30 minutes ago</p>
+          <div class="flex md:flex-row flex-col">
+            <div class="md:w-2/5 md:pr-9 w-full lg:mb-0 mb-6">
+              <img src="./images/articles/1.png" class="w-full" alt="">
+            </div>
+            <div class="md:w-3/5 w-full">
+              <p class="lg:text-2xl md:text-xl text-lg text-white font-bold mb-3">
+                Inside the New Exhibit of Paolo Roversi, Photographer and Longtime Comme des Garçons Collaborator
+              </p>
+              <p class="lg:text-base md:text-sm text-xs text-white mb-4">
+                Italian fashion photographer Paolo Roversi is one of Comme des Garçons’s closest collaborators. He first
+                met designer Rei Kawakubo in Paris in the ’80s and has continued to photograph her artful collections
+                over the years. “I started doing catalogs with Rei in the ’80s, and then every season I started
+                [working] with them,” Roversi says. After four decades, the famously elusive designer and the
+                photographer have... <span class="font-bold">Read More</span>
+              </p>
+              <div class="flex flex-wrap text-white font-bold text-xs mb-4">
+                <span class="mb-1 bg-indigo-700 mx-0.5 rounded px-2 py-1">Questions</span>
+                <span class="mb-1 bg-red-400 mx-0.5 rounded px-2 py-1">Fashion</span>
+                <span class="mb-1 bg-green-400 mx-0.5 rounded px-2 py-1">News</span>
+                <span class="mb-1 bg-yellow-600 mx-0.5 rounded px-2 py-1">Clothing</span>
+                <span class="mb-1 bg-pink-500 mx-0.5 rounded px-2 py-1">Article</span>
+                <span class="mb-1 bg-green-300 mx-0.5 rounded px-2 py-1">Designers</span>
+                <span class="mb-1 bg-blue-400 mx-0.5 rounded px-2 py-1">Imagine</span>
+              </div>
+              <div class="flex mb-4 text-white">
+                <span class="flex text-xs mr-5 pr-0.5">
+                  <img src="./images/icons/heart.svg" class="mr-2" alt="">
+                  <span class="font-bold mr-1">293</span> Likes
+                </span>
+                <span class="flex text-xs mr-5 pr-0.5 text-gray-500">
+                  <img src="./images/icons/chat-gray.svg" class="mr-2" alt="">
+                  No Comments
+                </span>
+              </div>
+              <div class="flex md:text-sm text-xs text-white font-bold md:mb-8 mb-6">
+                <button class="border border-gray-800 bg-indigo-600 btn-box-shadow font-sm h-9 box-content px-6 mr-5">
+                  Add a Comment
+                </button>
+                <button class="border border-gray-800 bg-indigo-600 btn-box-shadow font-sm h-9 box-content px-6">
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-700 py-6 px-7">
+          <p class="font-bold md:text-base sm:text-sm text-xs text-white">
+            John Smith <span class="font-normal text-gray-500 mb-0.5">posted a new product for </span>Wadness Collection
+          </p>
+          <p class="text-xs text-gray-500 mb-5 pb-0.5">January 26, 39 minutes ago</p>
+          <div class="flex md:flex-row flex-col">
+            <div class="md:w-2/5 md:pr-9 w-full lg:mb-0 mb-6">
+              <img src="./images/articles/2.png" class="w-full" alt="">
+            </div>
+            <div class="md:w-3/5 w-full">
+              <p class="lg:text-2xl md:text-xl text-lg text-white font-bold mb-3">
+                Marc Jacobs’s Earring Isn’t the Only Quirky Part of His Outfit
+              </p>
+              <p class="lg:text-base md:text-sm text-xs text-white mb-4">
+                Marc Jacobs’s Instagram fit pics should be studied in a museum. There is always an art to his #ootd
+                posts: He doesn’t just post outfits, rather a whole thematic mood to go with them, complete with
+                gorgeous settings and thoughtful captions. He will take a selfie in his garden while wearing a Gucci
+                coat and pondering, “Rise and look around you, and, you’ll see who you are... On a clear day how it will
+                astound you… That the glow of your being outshines every star.” Perfection.
+              </p>
+              <div class="flex mb-5 text-white">
+                <span class="flex text-xs mr-5 pr-0.5">
+                  <img src="./images/icons/heart.svg" class="mr-2" alt="">
+                  <span class="font-bold mr-1">28</span> Likes
+                </span>
+                <span class="flex text-xs mr-5 pr-0.5">
+                  <img src="./images/icons/chat.svg" class="mr-2" alt="">
+                  <span class="font-bold mr-1">26</span> Comments
+                </span>
+              </div>
+              <div class="flex md:text-sm text-xs text-white font-bold md:mb-8 mb-6">
+                <button class="border border-gray-800 bg-indigo-600 btn-box-shadow font-sm h-9 box-content px-6 mr-5">
+                  Add a Comment
+                </button>
+                <button class="border border-gray-800 bg-indigo-600 btn-box-shadow font-sm h-9 box-content px-6">
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-700 bg-gray-600 md:p-6 px-4 py-5">
+            <p class="font-bold md:text-base sm:text-sm text-xs text-white mb-0">Erica Gomes</p>
+            <p class="text-xs text-gray-500 mb-3">20 minutes ago</p>
+            <p class="md:text-sm text-xs text-white mb-3">
+              As today is a snow day in the northeast, Jacobs’s latest Instagram upload is set against a wintry
+              backdrop. “Snow what,” he captioned his snow day look, which included a bucket hat, shearling-lined
+              leopard print coat.
+            </p>
+            <div class="flex mb-1 text-white">
+              <span class="flex text-xs mr-5 pr-0.5">
+                <img src="./images/icons/heart.svg" class="mr-2" alt="">
+                <span class="font-bold mr-1">8</span> Likes
+              </span>
+              <span class="flex text-xs mr-5 pr-0.5">
+                <img src="./images/icons/chat.svg" class="mr-2" alt="">
+                <span class="font-bold mr-1">2</span> Comments
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xl:w-1/5 xl:block hidden">
+      <div class="bg-dark mb-5">
+        <div class="py-5 px-7 text-indigo-700 font-bold text-xl border-b border-indigo-700">
+          Help Requests
+        </div>
+        <div class="p-7 pb-0">
+          <div class="mb-6">
+            <p class="text-base text-white mb-1">
+              The Best Street Style at the Spring 2021 Couture Shows in Paris
+            </p>
+            <p class="text-xs">
+              <span class="text-indigo-700 font-bold">Anna Chapman </span>
+              <span class="text-gray-500">few seconds ago in</span>
+            </p>
+            <p class="text-xs font-bold text-white">What Are Your Favorite Clothes?</p>
+          </div>
+          <div class="mb-6">
+            <p class="text-base text-white mb-1">
+              New Fashion Arrivals To Get Excited About Now
+            </p>
+            <p class="text-xs">
+              <span class="text-indigo-700 font-bold">Nikki Person </span>
+              <span class="text-gray-500">few seconds ago in</span>
+            </p>
+            <p class="text-xs font-bold text-white">Versace or Gucci</p>
+          </div>
+          <div class="mb-6">
+            <p class="text-base text-white mb-1">
+              Meet the Couple Taking Glamour Shots of Korea’s Modern Families
+            </p>
+            <p class="text-xs">
+              <span class="text-indigo-700 font-bold">Jason Swarrow </span>
+              <span class="text-gray-500">few seconds ago in</span>
+            </p>
+            <p class="text-xs font-bold text-white">What's the weirdest trend?</p>
+          </div>
+          <div class="mb-6">
+            <p class="text-base text-white mb-1">
+              Which one way to shipping do you prefer? Shopping online or purchasing in a local store?
+            </p>
+            <p class="text-xs">
+              <span class="text-indigo-700 font-bold">Jason Swarrow </span>
+              <span class="text-gray-500">20 minutes ago in</span>
+            </p>
+            <p class="text-xs font-bold text-white">How To Take Care Of Clothes</p>
+          </div>
+          <div class="mb-6">
+            <p class="text-base text-white mb-1">
+              High-waisted trousers with unique suspenders
+            </p>
+            <p class="text-xs">
+              <span class="text-indigo-700 font-bold">Nikki Person </span>
+              <span class="text-gray-500">few seconds ago in</span>
+            </p>
+            <p class="text-xs font-bold text-white">Versace or Gucci</p>
+          </div>
+
+          <div class="text-indigo-700 text-center border-t-2 border-indigo-700 text-sm font-bold py-3.5">
+            <i class="fa fa-ellipsis-h"></i>
+            Show More
+            <i class="fa fa-ellipsis-h"></i>
+          </div>
+        </div>
+      </div>
+      <div class="bg-dark mb-5">
+        <div class="py-5 px-7 text-indigo-700 font-bold text-xl border-b border-indigo-700">
+          Community
+        </div>
+        <div class="p-7 pb-0">
+          <div class="mb-6">
+            <p class="text-base text-white mb-1">
+              Hope people will find cute ones and share them!!
+            </p>
+            <p class="text-xs">
+              <span class="text-indigo-700 font-bold">Anna Chapman </span>
+              <span class="text-gray-500">few seconds ago in</span>
+            </p>
+            <p class="text-xs font-bold text-white">Cloth Face Masks</p>
+          </div>
+          <div class="mb-6">
+            <p class="text-base text-white mb-1">
+              I'll posit this thread in here, but it can be moved if the mods feel it should be elsewhere....
+            </p>
+            <p class="text-xs">
+              <span class="text-indigo-700 font-bold">Eric Gomes </span>
+              <span class="text-gray-500">2 minutes ago in</span>
+            </p>
+            <p class="text-xs font-bold text-white">Scott Trindle - Photographer</p>
+          </div>
+          <div class="mb-6">
+            <p class="text-base text-white mb-1">
+              What other celebs do we know have "contracts" with big brands?
+            </p>
+            <p class="text-xs">
+              <span class="text-indigo-700 font-bold">Eric Gomes </span>
+              <span class="text-gray-500">28 minutes ago in</span>
+            </p>
+            <p class="text-xs font-bold text-white">The Business of Celebrities</p>
+          </div>
+          <div class="mb-6">
+            <p class="text-base text-white mb-1">
+              I think that Beyonce just buy a lot of Gucci...
+            </p>
+            <p class="text-xs">
+              <span class="text-indigo-700 font-bold">Anna Chapman </span>
+              <span class="text-gray-500">one day ago in</span>
+            </p>
+            <p class="text-xs font-bold text-white">Celebrities as Fashion</p>
+          </div>
+          <div class="mb-6">
+            <p class="text-base text-white mb-1">
+              What other celebs do we know have "contracts" with big brands?
+            </p>
+            <p class="text-xs">
+              <span class="text-indigo-700 font-bold">Maria Sarrow </span>
+              <span class="text-gray-500">one day ago in</span>
+            </p>
+            <p class="text-xs font-bold text-white">Celebrities as Fashion</p>
+          </div>
+
+          <div class="text-indigo-700 text-center border-t-2 border-indigo-700 text-sm font-bold py-3.5">
+            <i class="fa fa-ellipsis-h"></i>
+            Show More
+            <i class="fa fa-ellipsis-h"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="px-10 bg-gray-700 text-white">
+    <div class="w-full pt-14 pb-7">
+      <div class="mt-1.5 flex lg:flex-row flex-col">
+        <div class="lg:w-1/3 md:w-full lg:mb-0 mb-9">
+          <p class="font-prequel mb-4">The Blanket Tape</p>
+          <p class="mb-4 lg:pr-10">
+            The Blanket Tape brings to you fashion related news and information. It is our mission to continue offering
+            our support to the fashion brands.
+          </p>
+          <div class="flex">
+            <img class="mr-5 pr-0.5" src="./images/icons/facebook-light.svg" alt="">
+            <img class="mr-5 pr-0.5" src="./images/icons/twitter-light.svg" alt="">
+            <img class="mr-5 pr-0.5" src="./images/icons/instagram-light.svg" alt="">
+            <img class="mr-5 pr-0.5" src="./images/icons/linkedin-light.svg" alt="">
+            <img class="mr-5 pr-0.5" src="./images/icons/pinterest-light.svg" alt="">
+          </div>
+        </div>
+        <div class="lg:w-2/3 md:w-full flex flex-wrap">
+          <div class="sm:w-1/4 w-1/2 mb-7 footer-link">
+            <p class="font-bold text-white xl:text-base md:text-sm text-xs mb-4 pb-0.5">Solutions</p>
+            <ul class="text-white xl:text-base lg:text-sm text-xs">
+              <li><a href="#" class="mb-2 block">Marketing</a></li>
+              <li><a href="#" class="mb-2 block">Analytics</a></li>
+              <li><a href="#" class="mb-2 block">Commerce</a></li>
+              <li><a href="#" class="mb-2 block">Insights</a></li>
+            </ul>
+          </div>
+          <div class="sm:w-1/4 w-1/2 mb-7 footer-link">
+            <p class="font-bold text-white xl:text-base md:text-sm text-xs mb-4 pb-0.5">Support</p>
+            <ul class="text-white xl:text-base lg:text-sm text-xs">
+              <li><a href="#" class="mb-2 block">Pricing</a></li>
+              <li><a href="#" class="mb-2 block">Documentation</a></li>
+              <li><a href="#" class="mb-2 block">Guides</a></li>
+              <li><a href="#" class="mb-2 block">API Status</a></li>
+            </ul>
+          </div>
+          <div class="sm:w-1/4 w-1/2 mb-7 footer-link">
+            <p class="font-bold text-white xl:text-base md:text-sm text-xs mb-4 pb-0.5">Company</p>
+            <ul class="text-white xl:text-base lg:text-sm text-xs">
+              <li><a href="#" class="mb-2 block">About</a></li>
+              <li><a href="#" class="mb-2 block">Work</a></li>
+              <li><a href="#" class="mb-2 block">Jobs</a></li>
+              <li><a href="#" class="mb-2 block">Press</a></li>
+              <li><a href="#" class="mb-2 block">Partners</a></li>
+            </ul>
+          </div>
+          <div class="sm:w-1/4 w-1/2 mb-7 footer-link">
+            <p class="font-bold text-white xl:text-base md:text-sm text-xs mb-4 pb-0.5">Legal</p>
+            <ul class="text-white xl:text-base lg:text-sm text-xs">
+              <li><a href="#" class="mb-2 block">Claim</a></li>
+              <li><a href="#" class="mb-2 block">Privacy</a></li>
+              <li><a href="#" class="mb-2 block">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center border-t border-gray-300 text-white text-sm pb-7 pt-6">
+      <span class="mt-0 5">Copyright © 2020 The Blanket Type | All Rights Reserved</span>
+    </div>
+  </div>
+
+  <script>
+    var isOpen = false;
+    document.querySelectorAll('.collapse-header').forEach(function (item) {
+      item.addEventListener('click', function () {
+        var dataTarget = this.getAttribute('data-target');
+        var hasClass = document.querySelector(dataTarget).parentElement.classList.contains('active');
+        if (hasClass) {
+          document.querySelector(dataTarget).parentElement.classList.remove('active')
+        } else {
+          document.querySelector(dataTarget).parentElement.classList.add('active')
+        }
+      });
+    });
+
+    document.querySelector('#hamburger').addEventListener('click', function () {
+      isOpen = !isOpen;
+      if (isOpen) {
+        document.querySelector('#mobile-menu').classList.remove('-left-80');
+        document.querySelector('#mobile-menu').classList.add('left-0')
+      } else {
+        document.querySelector('#mobile-menu').classList.remove('left-0')
+        document.querySelector('#mobile-menu').classList.add('-left-80');
+      }
+    });
+
+    document.querySelector('#setting').addEventListener('click', function () {
+      var hasClass = document.querySelector('#board').classList.contains('hidden');
+      if (hasClass) {
+        document.querySelector('#board').classList.remove('hidden');
+      } else {
+        document.querySelector('#board').classList.add('hidden');
+      }
+    });
+
+    document.body.addEventListener('click', function (e) {
+      if (!(e.target.id === 'setting-image')) {
+        document.querySelector('#board').classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+
+</html>

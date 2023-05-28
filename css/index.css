@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+@font-face {
+  font-family: Prequel;
+  src: url('./fonts/Prequel.ttf');
+}
+
+body * {
+  font-family: 'PT Mono';
+}
+
+.btn-box-shadow {
+  box-shadow: 3px 3px 0 0 #1F2933;
+}
+
+.font-prequel {
+  font-family: Prequel;
+}
+
+.bg-dark {
+  background: #232B47;
+}
+
+.collapse .collapse-body {
+  display: none;
+}
+
+
+.collapse.active .collapse-body {
+  display: block;
+}
+
+.collapse .icon .left {
+  display: block;
+}
+
+.collapse.active .icon .left {
+  display: none;
+}
+
+.collapse .icon .down {
+  display: none;
+}
+
+.filter-invert {
+  filter: invert(1);
+}
+
+.collapse.active .icon .down {
+  display: block;
+}
+
+.triangle {
+  position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #FFF;
+  top: -10px;
+  left: 30px;
+  transform: translateX(-50%);
+}
+
+.triangle.dark {
+	border-bottom: 10px solid #4B5563;
+}
+
+.modal-box-shadow {
+  box-shadow: 1px 1px 3px 1px #00000016;
+}
+
+@media(min-width: 480px) and (max-width: 639px) {
+  .create-new-post-container {
+    width: 270px;
+  }
+
+  .footer-link {
+    width: 25%;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 479px) {
+  .basic {
+    display: none;
+  }
+}
+
+@media(min-width: 480px) {
+  .create-new-post {
+    display: block;
+  }
+}
+
+@media(max-width: 640px) {
+  .mation {
+    display: none;
+  }
+
+  .font-10 {
+    font-size: 10px;
+  }
+}
+
+#keypersons-modal .content, #contributors-modal .content {
+  max-height: 600px;
+}
+
+#contributors-modal, #keypersons-modal {
+  transform: translate(-50%, -50%);
+  top: 0%;
+  opacity: 0;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+#contributors-modal.open, #keypersons-modal.open {
+  transform: translate(-50%, -50%);
+  pointer-events: inherit;
+  top: 50%;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+@media(min-width: 1024px) {
+  #contributors-modal {
+    width: 800px;
+  }
+}
+
+@media(max-width: 1024px) {
+  #contributors-modal {
+    width: calc(100% - 10px);
+  }
+}
+
+#keypersons-modal {
+  max-width: 498px;
+  width: calc(100% - 10px);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #E4E7EB;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
